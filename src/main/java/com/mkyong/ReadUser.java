@@ -21,7 +21,7 @@ public class ReadUser {
 		// getting transaction object from session object
 		session.beginTransaction();
 		
-		Query query = session.createQuery("from DBUSER");
+		Query query = session.createQuery("from DBUser");
 		List<DBUser> users = query.list();
 		for (DBUser user : users) {
 			System.out.println("User Id: " + user.getUserId() + ", User Name: " + user.getUsername() + ", Created by: "

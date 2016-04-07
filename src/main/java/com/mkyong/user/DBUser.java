@@ -36,7 +36,7 @@ public class DBUser implements java.io.Serializable {
 	}
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO) 
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
 	@Column(name = "USER_ID", unique = true, nullable = false, precision = 5, scale = 0)
 	public int getUserId() {
 		return this.userId;

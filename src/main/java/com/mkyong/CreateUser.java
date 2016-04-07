@@ -22,7 +22,7 @@ public class CreateUser {
 		
 		DBUser user = new DBUser();
 		user.setUserId(1);
-		user.setUsername("HibernateUser");
+		user.setUsername("DefaultUser");
 		user.setCreatedBy("system");
 		user.setCreatedDate(new Date());
 
