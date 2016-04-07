@@ -21,7 +21,6 @@ public class CreateUser {
 		session.beginTransaction();
 		
 		DBUser user = new DBUser();
-		user.setUserId(1);
 		user.setUsername("DefaultUser");
 		user.setCreatedBy("system");
 		user.setCreatedDate(new Date());
